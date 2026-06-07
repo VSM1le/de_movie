@@ -1,27 +1,28 @@
-จุดมุ่งหมายของโปรเจกต์นี้
+# จุดมุ่งหมายของโปรเจกต์นี้
 
 ผมพอรู้คร่าว ๆ ว่า Data Engineer ทำอะไรบ้าง เช่น การแปลงข้อมูลที่กระจัดกระจายหรืออยู่ในรูปแบบที่ใช้งานยาก ให้กลายเป็นข้อมูลที่พร้อมสำหรับการนำไปใช้งานต่อ แต่ยังไม่มี mindset ของ Data Engineer มากนัก
 
 จึงทำโปรเจกต์เล็ก ๆ นี้ขึ้นมา เพื่อให้เห็นภาพการทำงานของ Data Engineer มากขึ้นผ่านการลงมือทำจริง
 
-วิธีรันโปรเจกต์
+## วิธีรันโปรเจกต์
 
 ใช้ Astral UV เพื่อสร้าง Virtual Environment ของ Python
 
-curl -LsSf https://astral.sh/uv/install.sh | sh
+`curl -LsSf https://astral.sh/uv/install.sh | sh`
 
 สมัครใช้งาน TMDB เพื่อรับ API Key
 
 คัดลอกไฟล์ .env-example เป็น .env
 
-cp .env-example .env
+`cp .env-example .env`
 
 จากนั้นนำ API Key ไปใส่ในตัวแปร TMDB_API_KEY
 
 รันโปรเจกต์ด้วยคำสั่ง
 
-uv run pipeline.py
-สิ่งที่ได้จากโปรเจกต์นี้
+`uv run pipeline.py`
+
+## สิ่งที่ได้จากโปรเจกต์นี้
 
 หนึ่งในแนวคิดที่น่าสนใจคือ Software Engineer และ Data Engineer มักมองข้อมูลต่างกัน
 
